@@ -11,3 +11,5 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/new', [IndexController::class, 'index']);
 Route::post('/new', [StoreController::class, 'store']);
+Route::get('/new/{id}', [ShowController::class, 'show']);
+Route::put('/new/{id}', [UpdateController::class, 'update']);
